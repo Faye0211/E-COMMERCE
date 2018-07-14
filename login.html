@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<link rel="stylesheet" type="text/css" href="../css/all.css">
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
+	<link rel="stylesheet" type="text/css" href="../css/footer.css">
+	<link rel="stylesheet" type="text/css" href="../css/login.css">
+	<script src="../lib/requirejs/require.js" data-main="../js/login"></script>
+</head>
+<body>
+	<div class="header" style="width: 100%;height: auto;"></div>
+	<div class="slogin">
+    	<div class="slogin_page">
+    	  <form method="post" action="index.aspx" id="ctl00">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"  />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" />
+</div>
+            <input name="openId" type="hidden" id="openId" />
+            <input name="accessToken" type="hidden" id="accessToken" value="0" />
+    	    <ul class="slogin_li">
+	    		<li>
+	    		<span>搜农坊会员登录</span>
+	    		<a href="regist.aspx" target="_blank">
+	    		<img src="../img/login/logo_select.png" />&nbsp;立即注册
+	    		</a>
+	    		</li>
+	    	    <li class="slogin_notice clear">
+	    	    <img src="../img/login/logo_notice.png" />公共场所不建议自动登录，以防账号丢失
+	    	    </li>
+	    	    <li class="slogin_border">
+	    	    <i class="slogin_icon"><img src="../img/login/logo_person.png" alt="登录名"/>
+	    	    </i>
+	    	    <input name="user_name" type="text" id="user_name" placeholder="邮箱/手机/用户名" />
+	    	    </li>
+	    	    <li class="slogin_border">
+	    	    <i class="slogin_icon">
+	    	    <img src="../img/login/logo_password.png" alt="密码"/>
+	    	    </i>
+	    	    <input name="pwd1" type="password" id="pwd1" placeholder="密码" /></li>
+	    	    <li class="slogin_auto clear"> <table id="cb_newmodel">
+				<tr>
+					<td>
+					<input id="cb_newmodel_0" type="checkbox" name="cb_newmodel$0" value="1" />
+					<label for="cb_newmodel_0">自动登录</label>
+					</td>
+				</tr>
+				</table><a href="ForgotPass.aspx" target="_blank">忘记密码?</a>
+				</li>
+	    	    <li><input type="button" value="登录" class="slogin_submit"  id="loginbtn" style="cursor: pointer;" /></li>
+    	    </ul>
+    	    <div class="slogin_web">
+    	    	<p>合作网站账户登录:</p>
+    	    	<ul>
+    	    		<a href="#" target="_blank"><li><img src="../img/login/logo_wechat.png" alt="微信登录"/>微信登录</li></a>
+    	    		<a id="qqLoginBtn" onClick="return window.open('https://graph.qq.com/oauth2.0/authorize?client_id=101166905&response_type=token&scope=all&redirect_uri=http%3A%2F%2Fwww.so50.com%2FUseradmin%2Flogin.aspx','_self');" target="_blank"><li><img src="../img/login/logo_qq.png" alt="QQ登录"/>QQ登录</li></a>
+    	    		<a href="LogAlipay.aspx" target="_blank"><li><img src="../img/login/logo_pay.png" alt="支付宝登录"/>支付宝</li></a>
+    	    	</ul>
+    	    </div>
+               <input name="pwdmis" type="hidden" id="pwdmis" value="0" /> 
+                                <input name="Hidden1" type="hidden" id="Hidden1" value="0" />     
+    	  </form>
+    	    <img src="../img/login/logo_codebg.png" class="slogin_codebg"/>
+    	</div>
+    </div>
+
+	<div class="footer"></div>
+</body>
+</html>
